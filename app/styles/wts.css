@@ -1,0 +1,154 @@
+/************* Global stlye changes for WTS *************/
+
+.wtsBlue {
+	color: #201d52;
+}
+
+/**** blue gradients used for nav and all headings ***/
+.blueGradient {
+	background: rgb(28,82,162); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(28,82,162) 0%, rgb(0,38,89) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(28,82,162)), color-stop(100%,rgb(0,38,89))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgb(28,82,162) 0%,rgb(0,38,89) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgb(28,82,162) 0%,rgb(0,38,89) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgb(28,82,162) 0%,rgb(0,38,89) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgb(28,82,162) 0%,rgb(0,38,89) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c52a2', endColorstr='#002659',GradientType=0 ); /* IE6-9 */
+}
+
+/******* Header and nav specific for all media *******/
+
+.wtsLogo {
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+
+#home .tel {
+	font-size: 22px;
+	text-align: right;
+}
+
+#home .telAlt {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+/**** the brand is activated for small tbalet and mobile and the logo and tel
+number are hidden with bootstrap hide classes see html ***/
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 0 10 15px;
+}
+
+/**** nav styles to global changes I havn't configured them all 
+but put them in here in case the client wants to style **/
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f9cb00;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555555;
+  background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #e7e7e7;
+  color: #555555;
+}
+
+/* home specific styles hero*/
+
+.wtsHero{
+	
+}
+
+
+/******* custom media quieries for WTS below here ************/
+
+/* Fix the maximum width to 970 so it fits with the design s
+tops bootstrap adding space for larger screens*/
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 992px) {
+
+/***** fix for the nav bar for larger screens ****/
+	.navbar{
+		width: auto;
+		float: right;
+		padding-left: 15px;
+		min-height: 20px;
+		position: relative;
+		top: -20px;
+	}
+
+	.navbar-default .navbar-nav > li > a {
+  		margin-right: 30px;
+	}
+    
+}
+
+@media (min-width: 768px) {
+
+	.navbar-nav{
+		min-height: 20px;
+	}
+
+
+}
+
+@media (max-width: 767px) {
+
+	/** Nav this configures the styling for the smaller tablet and mobile screens **/
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #eee;
+    background-color: transparent;
+  }
+
+}
