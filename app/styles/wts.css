@@ -3,9 +3,53 @@
 .wtsBlue {
 	color: #201d52;
 }
+.wtsYellow{
+	color: #f9cb00;
+}
+.wtsLightyellow{
+	background-color: #fef5cc;
+}
+
+/******* home page ********/
+
+#home .col-md-3{
+
+}
+
+#home h3{
+	display: block;
+	font-size: 17px;
+	color: #f9cb00;
+	padding: 10px 8px 10px 8px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+#home p{
+	color: #fff;
+	font-size: 17px;
+	padding: 0 8px 0 8px;
+}
+
+#home a.findOut{
+	color: #f9cb00;
+	padding: 0 8px 0 8px;
+}
+
+#home .colWrapper{
+	background-color: #094893;
+	padding-bottom: 40px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
 
 /**** blue gradients used for nav and all headings ***/
-.blueGradient {
+   .blueGradient{
 	background: rgb(28,82,162); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgb(28,82,162) 0%, rgb(0,38,89) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(28,82,162)), color-stop(100%,rgb(0,38,89))); /* Chrome,Safari4+ */
@@ -100,6 +144,31 @@ but put them in here in case the client wants to style **/
 	
 }
 
+/*********  Jumbotron fix for WTS ****************/
+
+.container .jumbotron {
+    padding:0;
+}
+.container .jumbotron {
+    border-radius: 0px;
+}
+.jumbotron {
+    margin: 50px auto 0;
+}
+.jumbotron {
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+.jumbotron {
+    background-color: #fff;
+    color: inherit;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.14286;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
 
 /******* custom media quieries for WTS below here ************/
 
@@ -114,19 +183,27 @@ tops bootstrap adding space for larger screens*/
 @media (min-width: 992px) {
 
 /***** fix for the nav bar for larger screens ****/
-	.navbar{
-		width: auto;
-		float: right;
-		padding-left: 15px;
-		min-height: 20px;
-		position: relative;
-		top: -20px;
-	}
+.navbar{
+	width: auto;
+	float: right;
+	padding-left: 15px;
+	min-height: 20px;
+	position: relative;
+	top: -20px;
+}
 
-	.navbar-default .navbar-nav > li > a {
-  		margin-right: 30px;
-	}
+.navbar-default .navbar-nav > li > a {
+	margin-right: 30px;
+}
     
+.navbar-nav > li > a {
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+
+.jumbotron {
+	margin-top: 20px;
+}
 }
 
 @media (min-width: 768px) {
@@ -151,4 +228,10 @@ tops bootstrap adding space for larger screens*/
     background-color: transparent;
   }
 
+  .jumbotron{
+  	margin-top: 0px;
+  }
+.navbar{
+	margin-bottom: 0px;
+}
 }
