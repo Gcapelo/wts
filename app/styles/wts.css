@@ -165,7 +165,7 @@ but put them in here in case the client wants to style **/
     font-size: 21px;
     font-weight: 200;
     line-height: 2.14286;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -203,6 +203,7 @@ tops bootstrap adding space for larger screens*/
 
 .jumbotron {
 	margin-top: 20px;
+	width:970px;
 }
 }
 
@@ -211,6 +212,12 @@ tops bootstrap adding space for larger screens*/
 	.navbar-nav{
 		min-height: 20px;
 	}
+#home .wts970fix .col-md-3 {
+	width: 220px;
+	padding:0;
+	margin:0 10px 0 0;
+}
+
 
 
 }
